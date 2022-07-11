@@ -4,39 +4,39 @@ import "./App.css";
 function App() {
   const questions = [
     {
-      questionText: "Q.1 What is the capital of France?",
+      questionText: "Q.1 What is the Capital of UAE?",
       answerOptions: [
-        { answerText: "New York", isCorrect: false },
-        { answerText: "London", isCorrect: false },
-        { answerText: "Paris", isCorrect: true },
-        { answerText: "Dublin", isCorrect: false },
+        { answerText: "Dhaka", isCorrect: false },
+        { answerText: "Dubai", isCorrect: false },
+        { answerText: "Abu Dhabi", isCorrect: true },
+        { answerText: "India", isCorrect: false },
       ],
     },
     {
-      questionText: "Q.2 Who is CEO of Tesla?",
+      questionText: "Q.2 Have you subscribed to MASHJAMA on youtube?",
       answerOptions: [
-        { answerText: "Jeff Bezos", isCorrect: false },
-        { answerText: "Elon Musk", isCorrect: true },
-        { answerText: "Bill Gates", isCorrect: false },
-        { answerText: "Tony Stark", isCorrect: false },
+        { answerText: "Yes", isCorrect: true },
+        { answerText: "Maybe", isCorrect: false },
+        { answerText: "No", isCorrect: false },
+        { answerText: "Maybe Not", isCorrect: false },
       ],
     },
     {
-      questionText: "Q.3 The iPhone was created by which company?",
+      questionText: "Q.3 Have you shared my youtube channel to your friends and familly?",
       answerOptions: [
-        { answerText: "Apple", isCorrect: true },
-        { answerText: "Intel", isCorrect: false },
-        { answerText: "Amazon", isCorrect: false },
-        { answerText: "Microsoft", isCorrect: false },
+        { answerText: "Yes", isCorrect: true },
+        { answerText: "Maybe", isCorrect: false },
+        { answerText: "No", isCorrect: false },
+        { answerText: "Maybe Not", isCorrect: false },
       ],
     },
     {
-      questionText: "Q.4 How many Harry Potter books are there?",
+      questionText: "Q.4 How many seconds in a year?",
       answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true },
+        { answerText: "31456000", isCorrect: false },
+        { answerText: "31636900", isCorrect: false },
+        { answerText: "31536000", isCorrect: true },
+        { answerText: "31976000", isCorrect: false },
       ],
     },
   ];
@@ -59,7 +59,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="bg-violet-700 absolute top-1/3 left-1/4 origin-[-50%_50%] p-5 white rounded-3xl">
       {showScore ? (
         <>
           <h1>
@@ -70,7 +70,7 @@ function App() {
         <div>
           <h1>{questions[currentQuestion].questionText}</h1>
 
-          <div className="answerButtonDiv">
+          <div className="flex justify-evenly md:items-center">
             {questions[currentQuestion].answerOptions.map((answerOption) => (
               <button onClick={() => handleClick(answerOption.isCorrect)}>
                 {answerOption.answerText}
