@@ -31,6 +31,33 @@ function App() {
       ],
     },
     {
+      questionText: "Q.3 Have you shared my youtube channel to your friends and familly?",
+      answerOptions: [
+        { answerText: "Yes", isCorrect: true },
+        { answerText: "Maybe", isCorrect: false },
+        { answerText: "No", isCorrect: false },
+        { answerText: "Maybe Not", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "Q.3 Have you shared my youtube channel to your friends and familly?",
+      answerOptions: [
+        { answerText: "Yes", isCorrect: true },
+        { answerText: "Maybe", isCorrect: false },
+        { answerText: "No", isCorrect: false },
+        { answerText: "Maybe Not", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "Q.3 Have you shared my youtube channel to your friends and familly?",
+      answerOptions: [
+        { answerText: "Yes", isCorrect: true },
+        { answerText: "Maybe", isCorrect: false },
+        { answerText: "No", isCorrect: false },
+        { answerText: "Maybe Not", isCorrect: false },
+      ],
+    },
+    {
       questionText: "Q.4 How many seconds in a year?",
       answerOptions: [
         { answerText: "31456000", isCorrect: false },
@@ -59,7 +86,7 @@ function App() {
   };
 
   return (
-    <div className="bg-violet-700 absolute top-1/3 left-1/4 origin-[-50%_50%] p-5 white rounded-3xl">
+    <div className="bg-violet-400 absolute top-1/3 left-1/4 origin-[-50%_50%] p-5 white rounded-3xl">
       {showScore ? (
         <>
           <h1>
